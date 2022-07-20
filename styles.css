@@ -15,3 +15,7 @@ aside {
     max-width: 29.5vw;
     width: 100%;
 }
+
+nav>div {
+    display: inline-block;
+}
