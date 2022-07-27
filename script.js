@@ -3,9 +3,7 @@ function getVideoLink() {
 }
 
 function loadVideo() {
-  $("#player").replaceWith(`<div id="player"></div>`);
-  var videoId = "p7YXXieghto";
-  onYouTubeIframeAPIReady(videoId);
+  player.loadVideoByUrl("https://www.youtube.com/watch?v=M7lc1UVf-VE");
 }
 
 // 2. This code loads the IFrame Player API code asynchronously.
@@ -19,7 +17,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady(videoId) {
-  player = null;
   player = new YT.Player("player", {
     height: "390",
     width: "640",
