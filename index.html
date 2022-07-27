@@ -11,21 +11,25 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="body flex-row">
     <main class="main-panel">
-        <nav>
+        <nav class="flex-row">
             <!-- logo icon -->
-            <div><img src="" alt="logo"></div>
+            <!-- <div><img src="" alt="logo"></div> -->
             <!-- chain link icon -->
-            <div><img src="" alt="link_icon"></div>
+            <!-- <div><img src="" alt="link_icon"></div> -->
             <!-- this input field is for the link -->
-            <div><input type="url" placeholder="https://www.youtube.com/watch?v=p7YXXieghto" name="video-link"
-                    id="video-link"></div>
+            <input class="url" type="url" placeholder="https://www.youtube.com/watch?v=p7YXXieghto" name="video-link"
+                id="video-link">
+            <button class="submit-button" id="submit">Go</button>
         </nav>
         <div id="video-placeholder"></div>
     </main>
     <div class="side-panel">
-        <p>Text</p>
+        <div class="ribbon">
+            <p>Chapters List</p>
+        </div>
+        <div class="chapters" id="chapters"></div>
     </div>
     <script src="./script.js"></script>
 </body>

@@ -13,3 +13,23 @@
     display: flex;
     flex-direction: column;
 }
+
+.body>.main-panel {
+    width: 80vw;
+    padding: 0.5em;
+}
+
+.body>.side-panel {
+    width: 20vw;
+    padding: 0.5em;
+}
+
+.url {
+    height: 2em;
+    width: 100%;
+}
+
+.submit-button {
+    margin: 0em 1em;
+    width: 3em;
+}
