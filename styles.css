@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    background-color: rgba(93, 156, 0, 0.2);
 }
 
 .flex-row {
@@ -25,7 +26,7 @@
 }
 
 .url {
-    height: 2em;
+    height: 100%;
     width: 100%;
 }
 
@@ -34,6 +35,26 @@
     width: 3em;
 }
 
+.chapter-card {
+    padding: 0.5em;
+    border: 1px solid grey;
+}
+
 .chapter-title {
-    display: inline;
+    display: inline-block;
+    padding: 1em;
+}
+
+.ribbon {
+    padding-bottom: 1em;
+}
+
+.navbar {
+    height: 2em;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    margin-right: 0.5em;
 }
