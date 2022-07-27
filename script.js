@@ -3,6 +3,7 @@ function getVideoLink() {
 }
 
 function loadVideo() {
+  $("#player").replaceWith(`<div id="player"></div>`);
   var videoId = "p7YXXieghto";
   onYouTubeIframeAPIReady(videoId);
 }
@@ -18,6 +19,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady(videoId) {
+  player = null;
   player = new YT.Player("player", {
     height: "390",
     width: "640",
