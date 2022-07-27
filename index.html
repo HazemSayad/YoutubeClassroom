@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YoutubeClassroom</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body class="body flex-row">
+  <body class="body flex-row">
     <main class="main-panel">
-        <nav class="navbar flex-row">
-            <!-- logo icon -->
-            <img src="./logo.png" alt="logo" class="logo">
-            <!-- chain link icon -->
-            <!-- <div><img src="" alt="link_icon"></div> -->
-            <!-- this input field is for the link -->
-            <input class="url" type="url" placeholder="https://www.youtube.com/watch?v=p7YXXieghto" name="video-link"
-                id="video-link">
-            <button class="submit-button" id="submit">Go</button>
-        </nav>
-        <div id="video-placeholder"></div>
+      <nav class="navbar flex-row">
+        <!-- logo icon -->
+        <img src="./logo.png" alt="logo" class="logo" />
+        <!-- chain link icon -->
+        <!-- <div><img src="" alt="link_icon"></div> -->
+        <!-- this input field is for the link -->
+        <input
+          class="url"
+          type="url"
+          placeholder="https://www.youtube.com/watch?v=p7YXXieghto"
+          name="video-link"
+          id="video-link"
+        />
+        <button class="submit-button" id="submit">Go</button>
+      </nav>
+      <div id="player"></div>
     </main>
     <div class="side-panel">
-        <div class="ribbon">
-            <p>Chapters List</p>
+      <div class="ribbon">
+        <p>Chapters List</p>
+      </div>
+      <div class="chapters" id="chapters">
+        <div class="chapter-card">
+          <input type="checkbox" name="is-watched" id="" />
+          <p class="chapter-title">Chapter 1</p>
         </div>
-        <div class="chapters" id="chapters">
-            <div class="chapter-card">
-                <input type="checkbox" name="is-watched" id="">
-                <p class="chapter-title">Chapter 1</p>
-            </div>
-            <div class="chapter-card">
-                <input type="checkbox" name="is-watched" id="">
-                <p class="chapter-title">Chapter 2</p>
-            </div>
-            <div class="chapter-card">
-                <input type="checkbox" name="is-watched" id="">
-                <p class="chapter-title">Chapter 3</p>
-            </div>
+        <div class="chapter-card">
+          <input type="checkbox" name="is-watched" id="" />
+          <p class="chapter-title">Chapter 2</p>
         </div>
+        <div class="chapter-card">
+          <input type="checkbox" name="is-watched" id="" />
+          <p class="chapter-title">Chapter 3</p>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
